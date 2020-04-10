@@ -1,0 +1,19 @@
+<<<<<<< Updated upstream
+{% extends 'university/base.html' %}
+
+{% block content %}
+    <h4>{{ university }}</h4>
+    <ul class="list-group">
+        {% for student in university.student_set.all %}
+            <li class="list-group-item"><a href="{% url 'student_details' student.id %}">{{ student }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+=======
+<h3>{{ university }}</h3>
+    <url>
+    {% for stud in students %}
+    <li><a href="{% url 'student_details' stud.id %}">{{ stud }}</a></li>
+    {% endfor %}
+    </url>
+>>>>>>> Stashed changes
